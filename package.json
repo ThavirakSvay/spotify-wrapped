@@ -18,8 +18,7 @@
 		"server": "nodemon index.js",
 		"client": "cd client && npm start",
 		"postinstall": "cd client && npm install",
-		"build": "cd client/ && npm install && npm run build",
-		"install": "cd client && npm install",
+		"build": "NODE_ENV=production cd client/ && npm install && npm run build",
 		"start-server": "node index.js",
 		"heroku-postbuild": "cd client && npm install && npm run build"
 	},
